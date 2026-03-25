@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — Marchel Ravelino Kotta</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: #1a1713; color: #ddd3c4; font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    nav a:hover { color: #c9894a !important; }
+    .blog-card:hover { border-color: #c9894a !important; transform: translateY(-3px); }
+    .btn-primary:hover { background: #e0a86a !important; }
+    @media (max-width: 700px) {
+      .blog-grid { grid-template-columns: 1fr !important; }
+      .footer-inner { flex-direction: column !important; text-align: center !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav style="position:sticky;top:0;z-index:1000;background:rgba(26,23,19,0.96);backdrop-filter:blur(10px);border-bottom:1px solid #3a342c;padding:1.1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;">
+  <div style="font-family:Georgia,serif;font-size:1.25rem;font-weight:700;color:#e8ddd0;letter-spacing:0.05em;">MRK<span style="color:#c9894a;">.</span></div>
+  <div style="display:flex;gap:2rem;">
+    <a href="index.html"   style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Home</a>
+    <a href="blog.html"    style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#e8ddd0;border-bottom:1px solid #c9894a;padding-bottom:2px;">Blog</a>
+    <a href="gallery.html" style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Gallery</a>
+    <a href="contact.html" style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Contact</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section style="background:#1a1713;padding:5rem 2.5rem 3rem;border-bottom:1px solid #3a342c;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:1rem;">— tulisan &amp; opini</p>
+    <h1 style="font-family:Georgia,serif;font-size:clamp(3rem,7vw,6rem);font-weight:700;color:#e8ddd0;line-height:1;margin-bottom:1rem;">Blog</h1>
+    <p style="max-width:540px;color:#a89880;font-size:1.05rem;">Tempat saya mencatat proses belajar dan berbagi opini tentang teknologi — apa adanya, tanpa dibuat-buat.</p>
+  </div>
+</section>
+
+<!-- BLOG CONTENT -->
+<section style="padding:4rem 2.5rem;">
+  <div style="max-width:1100px;margin:0 auto;">
+
+    <!-- FEATURED -->
+    <div style="background:#252119;border:1px solid #3a342c;border-left:3px solid #c9894a;padding:2.5rem;margin-bottom:3rem;">
+      <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;">
+        <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Opini</span>
+        <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">15 Maret 2025</span>
+      </div>
+      <h2 style="font-family:Georgia,serif;font-size:clamp(1.4rem,3vw,2rem);color:#e8ddd0;line-height:1.2;margin-bottom:1rem;">AI Bikin Programmer Ga Relevan? Pendapat Saya sebagai Mahasiswa IT</h2>
+      <p style="color:#a89880;margin-bottom:1.5rem;max-width:600px;">Setiap hari ada yang bilang AI bakal menggantikan programmer. Saya, sebagai mahasiswa semester 4 yang baru belajar ngoding, punya pendapat tersendiri soal ini — dan jawabannya tidak sesederhana ya atau tidak.</p>
+      <a href="#artikel-1" class="btn-primary" style="display:inline-block;padding:0.75rem 1.75rem;background:#c9894a;color:#1a1713;font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;">Baca Selengkapnya ↓</a>
+    </div>
+
+    <!-- BLOG GRID (4 kartu) -->
+    <div class="blog-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:4rem;">
+
+      <article class="blog-card" style="background:#252119;border:1px solid #3a342c;padding:2rem;transition:all 0.3s;cursor:pointer;">
+        <div style="display:flex;gap:0.75rem;align-items:center;margin-bottom:0.75rem;">
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Jurnal Belajar</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">28 Feb 2025</span>
+        </div>
+        <h3 style="font-family:Georgia,serif;font-size:1.1rem;color:#e8ddd0;line-height:1.3;margin-bottom:0.75rem;">Kenapa Belajar HTML dari Nol Lebih Susah dari yang Dikira</h3>
+        <p style="font-size:0.88rem;color:#a89880;line-height:1.6;margin-bottom:1rem;">Dulu saya pikir HTML itu gampang, tinggal nulis tag. Ternyata ketika mulai beneran membuat halaman yang rapih, ada banyak hal yang bikin frustrasi...</p>
+        <a href="#artikel-2" style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;">Baca →</a>
+      </article>
+
+      <article class="blog-card" style="background:#252119;border:1px solid #3a342c;padding:2rem;transition:all 0.3s;cursor:pointer;">
+        <div style="display:flex;gap:0.75rem;align-items:center;margin-bottom:0.75rem;">
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Review</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">10 Feb 2025</span>
+        </div>
+        <h3 style="font-family:Georgia,serif;font-size:1.1rem;color:#e8ddd0;line-height:1.3;margin-bottom:0.75rem;">Kesan Pertama Pakai VS Code: Antara Canggih dan Bingung</h3>
+        <p style="font-size:0.88rem;color:#a89880;line-height:1.6;margin-bottom:1rem;">Waktu pertama install VS Code, saya langsung overwhelmed dengan semua fitur dan extension yang tersedia. Ini cerita adaptasi saya...</p>
+        <a href="#artikel-3" style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;">Baca →</a>
+      </article>
+
+      <article class="blog-card" style="background:#252119;border:1px solid #3a342c;padding:2rem;transition:all 0.3s;cursor:pointer;">
+        <div style="display:flex;gap:0.75rem;align-items:center;margin-bottom:0.75rem;">
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Kampus</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">5 Jan 2025</span>
+        </div>
+        <h3 style="font-family:Georgia,serif;font-size:1.1rem;color:#e8ddd0;line-height:1.3;margin-bottom:0.75rem;">Semester 4: Ekspektasi vs Realita Kuliah Informatika</h3>
+        <p style="font-size:0.88rem;color:#a89880;line-height:1.6;margin-bottom:1rem;">Masuk semester 4 dengan semangat tinggi. Tapi kenyataan di lapangan selalu punya cara tersendiri untuk membuat kita lebih realistis...</p>
+        <a href="#artikel-4" style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;">Baca →</a>
+      </article>
+
+      <article class="blog-card" style="background:#252119;border:1px solid #3a342c;padding:2rem;transition:all 0.3s;cursor:pointer;">
+        <div style="display:flex;gap:0.75rem;align-items:center;margin-bottom:0.75rem;">
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Opini</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">20 Des 2024</span>
+        </div>
+        <h3 style="font-family:Georgia,serif;font-size:1.1rem;color:#e8ddd0;line-height:1.3;margin-bottom:0.75rem;">Internet di Indonesia: Kita Maju, Tapi Masih Ada Gap yang Besar</h3>
+        <p style="font-size:0.88rem;color:#a89880;line-height:1.6;margin-bottom:1rem;">Dari Manado, saya merasakan sendiri perbedaan akses internet dengan kota-kota besar di Jawa. Ini bukan keluhan, tapi refleksi...</p>
+        <a href="#artikel-5" style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;">Baca →</a>
+      </article>
+
+    </div>
+
+    <!-- ==================== ARTIKEL LENGKAP ==================== -->
+    <hr style="border:none;border-top:1px solid #3a342c;margin-bottom:4rem;" />
+
+    <!-- ARTIKEL 1 -->
+    <article id="artikel-1" style="margin-bottom:4rem;padding-bottom:4rem;border-bottom:1px solid #3a342c;">
+      <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;">
+        <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Opini</span>
+        <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">15 Maret 2025</span>
+      </div>
+      <h2 style="font-family:Georgia,serif;font-size:clamp(1.5rem,3vw,2.2rem);color:#e8ddd0;line-height:1.2;margin-bottom:1.5rem;">AI Bikin Programmer Ga Relevan? Pendapat Saya sebagai Mahasiswa IT</h2>
+      <p style="color:#a89880;margin-bottom:1rem;">Setiap hari ada yang bilang AI bakal menggantikan programmer. Di grup WhatsApp angkatan, di TikTok, di berita — semuanya kompak. Saya, sebagai mahasiswa semester 4 yang baru belajar ngoding, punya pendapat tersendiri soal ini.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Kenapa Saya Tidak Panik</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">Ketika saya pertama kali lihat GitHub Copilot bisa nulis kode otomatis, reaksi pertama saya jujur: sedikit takut. Tapi kemudian saya coba sendiri, dan langsung ketemu masalahnya — AI bisa nulis kode, tapi tidak bisa tau <em>apa yang seharusnya ditulis</em> kalau kita tidak tau problemnya.</p>
+      <p style="color:#a89880;margin-bottom:1rem;">Inilah yang sering luput dari diskusi: coding bukan hanya menulis syntax. Coding adalah memahami masalah, memecahnya jadi bagian-bagian kecil, dan memilih solusi yang tepat. Skill itu tidak bisa digantikan AI dengan mudah.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Yang Berubah, Bukan yang Hilang</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">Yang lebih akurat menurut saya: AI mengubah cara programmer bekerja, bukan menghapus kebutuhannya. Sama seperti kalkulator tidak menghapus kebutuhan akan matematikawan — malah membebaskan mereka untuk mengerjakan hal yang lebih kompleks.</p>
+      <p style="color:#a89880;margin-bottom:1rem;">Programmer yang bisa menggunakan AI sebagai alat justru akan lebih produktif dari sebelumnya. Yang terancam mungkin adalah programmer yang menolak beradaptasi.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Refleksi dari Semester 4</h3>
+      <p style="color:#a89880;">Saya masih di awal perjalanan. Masih sering bingung dengan error message, masih googling hal-hal dasar. Tapi justru karena itu, saya melihat betapa pentingnya membangun pemahaman fundamental yang kuat. Kesimpulan saya sederhana: belajar terus, pahami dasarnya, dan anggap AI sebagai teman kerja bukan saingan.</p>
+    </article>
+
+    <!-- ARTIKEL 2 -->
+    <article id="artikel-2" style="margin-bottom:4rem;padding-bottom:4rem;border-bottom:1px solid #3a342c;">
+      <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;">
+        <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Jurnal Belajar</span>
+        <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">28 Februari 2025</span>
+      </div>
+      <h2 style="font-family:Georgia,serif;font-size:clamp(1.5rem,3vw,2.2rem);color:#e8ddd0;line-height:1.2;margin-bottom:1.5rem;">Kenapa Belajar HTML dari Nol Lebih Susah dari yang Dikira</h2>
+      <p style="color:#a89880;margin-bottom:1rem;">Dulu saya pikir HTML itu gampang. "Tinggal nulis tag, kan?" Itu pikiran saya sebelum benar-benar mencoba membuat halaman yang rapih dari nol.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Ilusi Kemudahan HTML</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">HTML memang mudah untuk dipelajari dasarnya — dalam beberapa jam, siapapun bisa membuat halaman dengan heading, paragraf, dan gambar. Tapi ada jurang besar antara "bisa membuat halaman" dan "bisa membuat halaman yang baik."</p>
+      <p style="color:#a89880;margin-bottom:1rem;">Hal pertama yang bikin saya frustrasi: layout. Saya tidak mengerti kenapa elemen tidak mau berada di posisi yang saya inginkan. Flexbox dan Grid terasa seperti sihir yang tidak masuk akal pada awalnya.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Momen Aha yang Lambat Datangnya</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">Pemahaman tidak datang sekaligus. Saya harus membuat hal yang sama berkali-kali dengan cara yang sedikit berbeda sebelum akhirnya "klik" di kepala. CSS box model, misalnya — butuh berminggu-minggu sebelum saya benar-benar intuitif memahaminya.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Pelajaran yang Saya Ambil</h3>
+      <p style="color:#a89880;">Jangan remehkan hal-hal "dasar." HTML dan CSS terlihat sederhana dari luar, tapi menyimpan kompleksitas yang cukup dalam. Dan itu justru yang bikin web development menarik untuk dipelajari lebih jauh.</p>
+    </article>
+
+    <!-- ARTIKEL 3 -->
+    <article id="artikel-3" style="margin-bottom:4rem;padding-bottom:4rem;border-bottom:1px solid #3a342c;">
+      <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;">
+        <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Review</span>
+        <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">10 Februari 2025</span>
+      </div>
+      <h2 style="font-family:Georgia,serif;font-size:clamp(1.5rem,3vw,2.2rem);color:#e8ddd0;line-height:1.2;margin-bottom:1.5rem;">Kesan Pertama Pakai VS Code: Antara Canggih dan Bingung</h2>
+      <p style="color:#a89880;margin-bottom:1rem;">Sebelum pakai VS Code, saya coding di Notepad++. Bagi saya waktu itu, Notepad++ sudah lebih dari cukup. Lalu teman-teman angkatan mulai merekomendasikan VS Code dan saya pun mencobanya.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">First Impression: Overwhelmed</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">Saat pertama buka VS Code, saya langsung disambut dengan interface yang bersih tapi penuh dengan panel, sidebar, dan menu yang tidak saya mengerti fungsinya. Minggu pertama, saya cuma pakai VS Code seperti Notepad++ glorified — nulis kode, simpan, selesai.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Titik Balik: Extensions</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">Yang mengubah segalanya adalah ketika saya install extension Prettier untuk auto-format kode dan Live Server untuk preview langsung di browser. Tiba-tiba VS Code berasa jauh berbeda — lebih hidup dan lebih efisien.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Rekomendasi untuk yang Baru Mulai</h3>
+      <p style="color:#a89880;">Jangan coba pelajari semua fitur sekaligus. Mulai dari yang paling sering dipakai, lalu tambah satu per satu sesuai kebutuhan. VS Code sangat powerful, tapi tidak perlu semua powernya untuk memulai.</p>
+    </article>
+
+    <!-- ARTIKEL 4 -->
+    <article id="artikel-4" style="margin-bottom:4rem;padding-bottom:4rem;border-bottom:1px solid #3a342c;">
+      <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;">
+        <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Kampus</span>
+        <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">5 Januari 2025</span>
+      </div>
+      <h2 style="font-family:Georgia,serif;font-size:clamp(1.5rem,3vw,2.2rem);color:#e8ddd0;line-height:1.2;margin-bottom:1.5rem;">Semester 4: Ekspektasi vs Realita Kuliah Informatika</h2>
+      <p style="color:#a89880;margin-bottom:1rem;">Masuk semester 4 dengan semangat tinggi. Setelah melewati dua semester awal yang penuh dengan mata kuliah umum, akhirnya mulai masuk ke mata kuliah yang lebih teknis dan spesifik ke informatika.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Yang Saya Bayangkan</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">Ekspektasi saya: kuliah semester 4 akan penuh dengan proyek coding yang seru, diskusi tentang teknologi terbaru, dan mulai membangun portfolio yang solid. Saya membayangkan setiap hari akan ada hal baru yang dipelajari tentang dunia programming.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Kenyataan yang Ada</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">Realitanya lebih nuanced. Memang ada mata kuliah teknis yang seru, tapi juga ada mata kuliah yang lebih teoritis dan membutuhkan kesabaran ekstra. Beban tugas lebih berat dari semester sebelumnya.</p>
+      <p style="color:#a89880;">Semester ini mengajarkan saya bahwa proses belajar yang baik membutuhkan kesabaran. Kuliah informatika adalah maraton, bukan sprint.</p>
+    </article>
+
+    <!-- ARTIKEL 5 -->
+    <article id="artikel-5" style="margin-bottom:2rem;">
+      <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;">
+        <span style="font-family:'Courier New',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#1a1713;background:#c9894a;padding:0.2rem 0.6rem;">Opini</span>
+        <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">20 Desember 2024</span>
+      </div>
+      <h2 style="font-family:Georgia,serif;font-size:clamp(1.5rem,3vw,2.2rem);color:#e8ddd0;line-height:1.2;margin-bottom:1.5rem;">Internet di Indonesia: Kita Maju, Tapi Masih Ada Gap yang Besar</h2>
+      <p style="color:#a89880;margin-bottom:1rem;">Saya kuliah di Manado, Sulawesi Utara. Dan setiap kali saya ngobrol dengan teman dari kota-kota besar di Jawa tentang akses internet, saya selalu menyadari betapa berbedanya pengalaman kami.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Dari Sudut Pandang Mahasiswa di Manado</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">Internet di Manado sudah jauh lebih baik dari beberapa tahun lalu. Ada 4G yang cukup merata, ada beberapa pilihan provider, dan di kampus ada WiFi — meski tidak selalu stabil.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Ini Bukan Sekadar Soal Kecepatan</h3>
+      <p style="color:#a89880;margin-bottom:1rem;">Gap ini berdampak nyata pada akses pendidikan dan peluang. Developer yang bisa akses internet cepat, tools cloud, dan komunitas online dengan mudah punya keuntungan yang tidak kecil dibanding yang tidak bisa.</p>
+      <h3 style="font-family:Georgia,serif;font-size:1.2rem;color:#e8ddd0;margin:1.75rem 0 0.75rem;">Harapan ke Depan</h3>
+      <p style="color:#a89880;">Saya optimis. Program-program pemerintah untuk memperluas akses internet ke wilayah terpencil adalah langkah yang benar. Dan sebagai mahasiswa IT, saya berharap bisa berkontribusi suatu hari nanti.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#1a1713;border-top:1px solid #3a342c;padding:2rem 2.5rem;">
+  <div class="footer-inner" style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+    <span style="font-family:Georgia,serif;font-size:1.1rem;color:#e8ddd0;">MRK<span style="color:#c9894a;">.</span></span>
+    <span style="font-family:'Courier New',monospace;font-size:0.68rem;color:#8a7d6e;letter-spacing:0.05em;">© 2025 Marchel Ravelino Kotta · UNSRAT Informatika</span>
+    <div style="display:flex;gap:1.5rem;">
+      <a href="contact.html" style="font-family:'Courier New',monospace;font-size:0.72rem;color:#8a7d6e;letter-spacing:0.08em;text-transform:uppercase;">Contact</a>
+      <a href="index.html"   style="font-family:'Courier New',monospace;font-size:0.72rem;color:#8a7d6e;letter-spacing:0.08em;text-transform:uppercase;">Home</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

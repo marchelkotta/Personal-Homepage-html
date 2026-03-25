@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marchel Ravelino Kotta — Home</title>
+  <style>
+    /* Minimal style block hanya untuk hal yang tidak bisa dilakukan inline */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: #1a1713; color: #ddd3c4; font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* Nav hover effect */
+    nav a:hover { color: #c9894a !important; }
+
+    /* Button hover */
+    .btn-primary:hover { background: #e0a86a !important; }
+    .btn-ghost:hover { border-color: #c9894a !important; color: #c9894a !important; }
+
+    /* Skill card hover */
+    .skill-card:hover { border-color: #c9894a !important; transform: translateY(-3px); }
+
+    /* Post row hover */
+    .post-row:hover { background: #252119 !important; }
+    .post-row:hover h3 { color: #e0a86a !important; }
+
+    /* Blog card hover */
+    .blog-card:hover { border-color: #c9894a !important; transform: translateY(-3px); }
+
+    /* Gallery hover */
+    .gallery-item:hover .gallery-overlay { opacity: 1 !important; }
+    .gallery-emoji-big:hover { transform: scale(1.15); }
+
+    /* Social btn hover */
+    .social-btn:hover { border-color: #c9894a !important; color: #c9894a !important; }
+
+    /* Input focus */
+    input:focus, textarea:focus { outline: none; border-color: #c9894a !important; }
+
+    /* Responsive basic */
+    @media (max-width: 700px) {
+      .hero-grid { display: block !important; }
+      .about-grid { display: block !important; }
+      .skills-grid { grid-template-columns: 1fr 1fr !important; }
+      .contact-grid { display: block !important; }
+      .gallery-grid { grid-template-columns: 1fr !important; }
+      .blog-grid { grid-template-columns: 1fr !important; }
+      .hero-img-col { display: none !important; }
+      .footer-inner { flex-direction: column !important; gap: 0.5rem !important; text-align: center !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav style="position:sticky;top:0;z-index:1000;background:rgba(26,23,19,0.96);backdrop-filter:blur(10px);border-bottom:1px solid #3a342c;padding:1.1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;">
+  <div style="font-family:Georgia,serif;font-size:1.25rem;font-weight:700;color:#e8ddd0;letter-spacing:0.05em;">
+    MRK<span style="color:#c9894a;">.</span>
+  </div>
+  <div style="display:flex;gap:2rem;">
+    <a href="index.html" style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#e8ddd0;border-bottom:1px solid #c9894a;padding-bottom:2px;">Home</a>
+    <a href="blog.html"  style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Blog</a>
+    <a href="gallery.html" style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Gallery</a>
+    <a href="contact.html" style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Contact</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section style="background:#1a1713;padding:5rem 2.5rem 5rem;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:50%;left:-0.05em;transform:translateY(-50%);font-family:Georgia,serif;font-size:clamp(6rem,16vw,15rem);font-weight:700;color:transparent;-webkit-text-stroke:1px rgba(201,137,74,0.07);line-height:1;pointer-events:none;user-select:none;white-space:nowrap;">MARCHEL</div>
+  <div class="hero-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1100px;margin:0 auto;position:relative;z-index:1;">
+    <div>
+      <p style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:1.5rem;">— mahasiswa informatika</p>
+      <h1 style="font-family:Georgia,serif;font-size:clamp(2.8rem,5.5vw,5rem);font-weight:700;color:#e8ddd0;line-height:1.05;margin-bottom:1rem;">
+        Marchel<br/><em style="font-style:italic;color:#e0a86a;">Ravelino</em><br/>Kotta
+      </h1>
+      <p style="font-family:'Courier New',monospace;font-size:0.78rem;color:#8a7d6e;margin-bottom:2.5rem;letter-spacing:0.05em;">Universitas Sam Ratulangi · Semester IV</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="blog.html" class="btn-primary" style="display:inline-block;padding:0.75rem 1.75rem;background:#c9894a;color:#1a1713;font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;transition:background 0.3s;">Baca Blog</a>
+        <a href="contact.html" class="btn-ghost" style="display:inline-block;padding:0.75rem 1.75rem;background:transparent;color:#e8ddd0;font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;border:1px solid #3a342c;transition:all 0.3s;">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-img-col" style="display:flex;justify-content:center;">
+      <div style="position:relative;width:300px;height:380px;">
+        <img src="assets/ProfilePicture2.jpeg" alt="Marchel Ravelino Kotta" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <div style="position:absolute;bottom:-10px;right:-10px;width:100%;height:100%;border:1px solid rgba(201,137,74,0.4);z-index:-1;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TENTANG SAYA ===== -->
+<section style="background:#211e1a;padding:5rem 2.5rem;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:1.5rem;">001 / tentang saya</p>
+    <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">
+      <div>
+        <h2 style="font-family:Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;color:#e8ddd0;line-height:1.15;margin-bottom:1.5rem;">Sedang belajar,<br/><em style="color:#e0a86a;">terus berproses.</em></h2>
+        <p style="color:#a89880;margin-bottom:1rem;">Saya Marchel Ravelino Kotta, mahasiswa Teknik Informatika semester 4 di Universitas Sam Ratulangi, Manado. Masih dalam tahap belajar banyak hal — dari dasar pemrograman hingga bagaimana teknologi membentuk cara kita berpikir.</p>
+        <p style="color:#a89880;">Blog ini adalah ruang jujur saya: mencatat proses belajar, berbagi opini tentang teknologi, dan mendokumentasikan perjalanan kuliah apa adanya.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2rem;padding-top:1rem;">
+        <div style="border-left:2px solid #c9894a;padding-left:1.25rem;">
+          <span style="font-family:Georgia,serif;font-size:2.5rem;font-weight:700;color:#e8ddd0;display:block;line-height:1;">4</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;letter-spacing:0.1em;margin-top:0.25rem;display:block;">Semester</span>
+        </div>
+        <div style="border-left:2px solid #c9894a;padding-left:1.25rem;">
+          <span style="font-family:Georgia,serif;font-size:2.5rem;font-weight:700;color:#e8ddd0;display:block;line-height:1;">2022</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;letter-spacing:0.1em;margin-top:0.25rem;display:block;">Angkatan</span>
+        </div>
+        <div style="border-left:2px solid #c9894a;padding-left:1.25rem;">
+          <span style="font-family:Georgia,serif;font-size:2.5rem;font-weight:700;color:#e8ddd0;display:block;line-height:1;">∞</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;letter-spacing:0.1em;margin-top:0.25rem;display:block;">Hal yang masih dipelajari</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STACK & TOOLS ===== -->
+<section style="background:#1a1713;padding:5rem 2.5rem;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:1.5rem;">002 / yang sedang dipelajari</p>
+    <h2 style="font-family:Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;color:#e8ddd0;line-height:1.15;margin-bottom:2rem;">Stack &amp; Tools</h2>
+    <div class="skills-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;">
+
+      <div class="skill-card" style="background:#252119;border:1px solid #3a342c;padding:1.5rem;transition:all 0.3s;">
+        <div style="font-family:'Courier New',monospace;font-size:1.2rem;color:#c9894a;margin-bottom:0.75rem;">{ }</div>
+        <h3 style="font-family:Georgia,serif;font-size:1rem;color:#e8ddd0;margin-bottom:0.5rem;">HTML / CSS</h3>
+        <p style="font-size:0.82rem;color:#8a7d6e;margin-bottom:1rem;line-height:1.5;">Struktur dan tampilan halaman web dasar</p>
+        <div style="height:2px;background:#3a342c;width:100%;">
+          <div style="height:100%;background:#c9894a;width:70%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-card" style="background:#252119;border:1px solid #3a342c;padding:1.5rem;transition:all 0.3s;">
+        <div style="font-family:'Courier New',monospace;font-size:1.2rem;color:#c9894a;margin-bottom:0.75rem;">JS</div>
+        <h3 style="font-family:Georgia,serif;font-size:1rem;color:#e8ddd0;margin-bottom:0.5rem;">JavaScript</h3>
+        <p style="font-size:0.82rem;color:#8a7d6e;margin-bottom:1rem;line-height:1.5;">Logika interaktif pada sisi klien</p>
+        <div style="height:2px;background:#3a342c;width:100%;">
+          <div style="height:100%;background:#c9894a;width:45%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-card" style="background:#252119;border:1px solid #3a342c;padding:1.5rem;transition:all 0.3s;">
+        <div style="font-family:'Courier New',monospace;font-size:1.2rem;color:#c9894a;margin-bottom:0.75rem;">Py</div>
+        <h3 style="font-family:Georgia,serif;font-size:1rem;color:#e8ddd0;margin-bottom:0.5rem;">Python</h3>
+        <p style="font-size:0.82rem;color:#8a7d6e;margin-bottom:1rem;line-height:1.5;">Dasar algoritma dan struktur data</p>
+        <div style="height:2px;background:#3a342c;width:100%;">
+          <div style="height:100%;background:#c9894a;width:50%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-card" style="background:#252119;border:1px solid #3a342c;padding:1.5rem;transition:all 0.3s;">
+        <div style="font-family:'Courier New',monospace;font-size:1.2rem;color:#c9894a;margin-bottom:0.75rem;">Git</div>
+        <h3 style="font-family:Georgia,serif;font-size:1rem;color:#e8ddd0;margin-bottom:0.5rem;">Git &amp; GitHub</h3>
+        <p style="font-size:0.82rem;color:#8a7d6e;margin-bottom:1rem;line-height:1.5;">Version control dasar untuk project kuliah</p>
+        <div style="height:2px;background:#3a342c;width:100%;">
+          <div style="height:100%;background:#c9894a;width:40%;"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TULISAN TERBARU ===== -->
+<section style="background:#211e1a;padding:5rem 2.5rem;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:1.5rem;">003 / tulisan terbaru</p>
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2rem;">
+      <h2 style="font-family:Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;color:#e8ddd0;">Dari Blog</h2>
+      <a href="blog.html" style="font-family:'Courier New',monospace;font-size:0.75rem;color:#c9894a;letter-spacing:0.05em;">lihat semua →</a>
+    </div>
+
+    <div style="border-top:1px solid #3a342c;">
+
+      <a href="blog.html" class="post-row" style="display:grid;grid-template-columns:3rem 1fr auto;align-items:center;gap:1.5rem;padding:1.5rem 0.75rem;border-bottom:1px solid #3a342c;transition:background 0.3s;">
+        <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#c9894a;">01</span>
+        <div>
+          <h3 style="font-family:Georgia,serif;font-size:1.05rem;color:#e8ddd0;margin-bottom:0.25rem;transition:color 0.3s;">AI Bikin Programmer Ga Relevan? Pendapat Saya sebagai Mahasiswa IT</h3>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">Maret 2025</span>
+        </div>
+        <span style="color:#8a7d6e;">→</span>
+      </a>
+
+      <a href="blog.html" class="post-row" style="display:grid;grid-template-columns:3rem 1fr auto;align-items:center;gap:1.5rem;padding:1.5rem 0.75rem;border-bottom:1px solid #3a342c;transition:background 0.3s;">
+        <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#c9894a;">02</span>
+        <div>
+          <h3 style="font-family:Georgia,serif;font-size:1.05rem;color:#e8ddd0;margin-bottom:0.25rem;">Kenapa Belajar HTML dari Nol Lebih Susah dari yang Dikira</h3>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">Februari 2025</span>
+        </div>
+        <span style="color:#8a7d6e;">→</span>
+      </a>
+
+      <a href="blog.html" class="post-row" style="display:grid;grid-template-columns:3rem 1fr auto;align-items:center;gap:1.5rem;padding:1.5rem 0.75rem;border-bottom:1px solid #3a342c;transition:background 0.3s;">
+        <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#c9894a;">03</span>
+        <div>
+          <h3 style="font-family:Georgia,serif;font-size:1.05rem;color:#e8ddd0;margin-bottom:0.25rem;">Kesan Pertama Pakai VS Code: Antara Canggih dan Bingung</h3>
+          <span style="font-family:'Courier New',monospace;font-size:0.7rem;color:#8a7d6e;">Januari 2025</span>
+        </div>
+        <span style="color:#8a7d6e;">→</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background:#1a1713;border-top:1px solid #3a342c;padding:2rem 2.5rem;">
+  <div class="footer-inner" style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+    <span style="font-family:Georgia,serif;font-size:1.1rem;color:#e8ddd0;">MRK<span style="color:#c9894a;">.</span></span>
+    <span style="font-family:'Courier New',monospace;font-size:0.68rem;color:#8a7d6e;letter-spacing:0.05em;">© 2025 Marchel Ravelino Kotta · UNSRAT Informatika</span>
+    <div style="display:flex;gap:1.5rem;">
+      <a href="contact.html" style="font-family:'Courier New',monospace;font-size:0.72rem;color:#8a7d6e;letter-spacing:0.08em;text-transform:uppercase;">Contact</a>
+      <a href="blog.html"    style="font-family:'Courier New',monospace;font-size:0.72rem;color:#8a7d6e;letter-spacing:0.08em;text-transform:uppercase;">Blog</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

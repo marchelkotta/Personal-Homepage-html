@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Marchel Ravelino Kotta</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: #1a1713; color: #ddd3c4; font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; }
+    a { text-decoration: none; color: inherit; }
+    nav a:hover { color: #c9894a !important; }
+    input:focus, textarea:focus { outline: none; border-color: #c9894a !important; }
+    .btn-primary:hover { background: #e0a86a !important; }
+    .social-btn:hover { border-color: #c9894a !important; color: #c9894a !important; }
+    @media (max-width: 700px) {
+      .contact-grid { display: block !important; }
+      .contact-grid > div { margin-bottom: 2rem; }
+      .footer-inner { flex-direction: column !important; text-align: center !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav style="position:sticky;top:0;z-index:1000;background:rgba(26,23,19,0.96);backdrop-filter:blur(10px);border-bottom:1px solid #3a342c;padding:1.1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;">
+  <div style="font-family:Georgia,serif;font-size:1.25rem;font-weight:700;color:#e8ddd0;letter-spacing:0.05em;">MRK<span style="color:#c9894a;">.</span></div>
+  <div style="display:flex;gap:2rem;">
+    <a href="index.html"   style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Home</a>
+    <a href="blog.html"    style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Blog</a>
+    <a href="gallery.html" style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Gallery</a>
+    <a href="contact.html" style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#e8ddd0;border-bottom:1px solid #c9894a;padding-bottom:2px;">Contact</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section style="background:#1a1713;padding:5rem 2.5rem 3rem;border-bottom:1px solid #3a342c;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:1rem;">— mari terhubung</p>
+    <h1 style="font-family:Georgia,serif;font-size:clamp(3rem,7vw,6rem);font-weight:700;color:#e8ddd0;line-height:1;margin-bottom:1rem;">Contact</h1>
+    <p style="max-width:540px;color:#a89880;font-size:1.05rem;">Punya pertanyaan, ide kolaborasi, atau sekadar ingin berkenalan? Saya terbuka untuk ngobrol.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section style="padding:5rem 2.5rem;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start;">
+
+      <!-- LEFT: INFO -->
+      <div>
+        <h2 style="font-family:Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.8rem);color:#e8ddd0;line-height:1.1;margin-bottom:1.25rem;">Mari<br/><em style="font-style:italic;color:#e0a86a;">Terhubung</em></h2>
+        <p style="color:#a89880;margin-bottom:2rem;">Saya mahasiswa yang masih banyak belajar, dan percaya bahwa koneksi dengan orang-orang baru adalah salah satu cara belajar terbaik.</p>
+
+        <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem;">
+
+          <div style="display:flex;align-items:flex-start;gap:1rem;">
+            <span style="font-size:1rem;flex-shrink:0;margin-top:0.1rem;">✉</span>
+            <div>
+              <span style="display:block;font-family:'Courier New',monospace;font-size:0.65rem;color:#8a7d6e;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.15rem;">Email</span>
+              <a href="mailto:marchel@example.com" style="color:#e8ddd0;font-size:0.92rem;">marchel@example.com</a>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:flex-start;gap:1rem;">
+            <span style="font-size:1rem;flex-shrink:0;margin-top:0.1rem;">📍</span>
+            <div>
+              <span style="display:block;font-family:'Courier New',monospace;font-size:0.65rem;color:#8a7d6e;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.15rem;">Lokasi</span>
+              <span style="color:#e8ddd0;font-size:0.92rem;">Manado, Sulawesi Utara</span>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:flex-start;gap:1rem;">
+            <span style="font-size:1rem;flex-shrink:0;margin-top:0.1rem;">🎓</span>
+            <div>
+              <span style="display:block;font-family:'Courier New',monospace;font-size:0.65rem;color:#8a7d6e;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.15rem;">Institusi</span>
+              <span style="color:#e8ddd0;font-size:0.92rem;">Universitas Sam Ratulangi</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+          <a href="#" class="social-btn" style="font-family:'Courier New',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.4rem 0.9rem;border:1px solid #3a342c;color:#8a7d6e;transition:all 0.3s;">GitHub</a>
+          <a href="#" class="social-btn" style="font-family:'Courier New',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.4rem 0.9rem;border:1px solid #3a342c;color:#8a7d6e;transition:all 0.3s;">LinkedIn</a>
+          <a href="#" class="social-btn" style="font-family:'Courier New',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.4rem 0.9rem;border:1px solid #3a342c;color:#8a7d6e;transition:all 0.3s;">Instagram</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div style="background:#252119;border:1px solid #3a342c;padding:2.5rem;">
+        <form action="mailto:marchel@example.com" method="get" enctype="text/plain">
+
+          <div style="margin-bottom:1.5rem;">
+            <label for="name" style="display:block;font-family:'Courier New',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d6e;margin-bottom:0.5rem;">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required
+              style="width:100%;background:#2e2a24;border:1px solid #3a342c;color:#ddd3c4;font-family:Georgia,serif;font-size:0.92rem;padding:0.75rem 1rem;transition:border-color 0.3s;" />
+          </div>
+
+          <div style="margin-bottom:1.5rem;">
+            <label for="email" style="display:block;font-family:'Courier New',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d6e;margin-bottom:0.5rem;">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" required
+              style="width:100%;background:#2e2a24;border:1px solid #3a342c;color:#ddd3c4;font-family:Georgia,serif;font-size:0.92rem;padding:0.75rem 1rem;transition:border-color 0.3s;" />
+          </div>
+
+          <div style="margin-bottom:1.5rem;">
+            <label for="subject" style="display:block;font-family:'Courier New',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d6e;margin-bottom:0.5rem;">Subjek</label>
+            <input type="text" id="subject" name="subject" placeholder="Tentang apa?"
+              style="width:100%;background:#2e2a24;border:1px solid #3a342c;color:#ddd3c4;font-family:Georgia,serif;font-size:0.92rem;padding:0.75rem 1rem;transition:border-color 0.3s;" />
+          </div>
+
+          <div style="margin-bottom:1.5rem;">
+            <label for="message" style="display:block;font-family:'Courier New',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d6e;margin-bottom:0.5rem;">Pesan</label>
+            <textarea id="message" name="body" rows="5" placeholder="Tulis pesan Anda di sini..." required
+              style="width:100%;background:#2e2a24;border:1px solid #3a342c;color:#ddd3c4;font-family:Georgia,serif;font-size:0.92rem;padding:0.75rem 1rem;resize:vertical;transition:border-color 0.3s;"></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary"
+            style="display:block;width:100%;padding:0.75rem 1.75rem;background:#c9894a;color:#1a1713;font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;border:none;cursor:pointer;text-align:center;transition:background 0.3s;">
+            Kirim Pesan
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#1a1713;border-top:1px solid #3a342c;padding:2rem 2.5rem;">
+  <div class="footer-inner" style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+    <span style="font-family:Georgia,serif;font-size:1.1rem;color:#e8ddd0;">MRK<span style="color:#c9894a;">.</span></span>
+    <span style="font-family:'Courier New',monospace;font-size:0.68rem;color:#8a7d6e;letter-spacing:0.05em;">© 2025 Marchel Ravelino Kotta · UNSRAT Informatika</span>
+    <div style="display:flex;gap:1.5rem;">
+      <a href="blog.html"  style="font-family:'Courier New',monospace;font-size:0.72rem;color:#8a7d6e;letter-spacing:0.08em;text-transform:uppercase;">Blog</a>
+      <a href="index.html" style="font-family:'Courier New',monospace;font-size:0.72rem;color:#8a7d6e;letter-spacing:0.08em;text-transform:uppercase;">Home</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

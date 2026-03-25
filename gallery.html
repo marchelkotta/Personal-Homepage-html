@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery — Marchel Ravelino Kotta</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: #1a1713; color: #ddd3c4; font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; }
+    a { text-decoration: none; color: inherit; }
+    nav a:hover { color: #c9894a !important; }
+    .gallery-item:hover .gallery-overlay { opacity: 1 !important; }
+    .gallery-emoji-big { transition: transform 0.3s; }
+    .gallery-emoji-big:hover { transform: scale(1.15); }
+    .filter-btn:hover { background: #c9894a !important; border-color: #c9894a !important; color: #1a1713 !important; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 1rem; }
+    @media (max-width: 700px) {
+      .gallery-grid { grid-template-columns: 1fr !important; grid-auto-rows: 200px !important; }
+      .footer-inner { flex-direction: column !important; text-align: center !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav style="position:sticky;top:0;z-index:1000;background:rgba(26,23,19,0.96);backdrop-filter:blur(10px);border-bottom:1px solid #3a342c;padding:1.1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;">
+  <div style="font-family:Georgia,serif;font-size:1.25rem;font-weight:700;color:#e8ddd0;letter-spacing:0.05em;">MRK<span style="color:#c9894a;">.</span></div>
+  <div style="display:flex;gap:2rem;">
+    <a href="index.html"   style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Home</a>
+    <a href="blog.html"    style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Blog</a>
+    <a href="gallery.html" style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#e8ddd0;border-bottom:1px solid #c9894a;padding-bottom:2px;">Gallery</a>
+    <a href="contact.html" style="font-family:'Courier New',monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d6e;">Contact</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section style="background:#1a1713;padding:5rem 2.5rem 3rem;border-bottom:1px solid #3a342c;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p style="font-family:'Courier New',monospace;font-size:0.72rem;color:#c9894a;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:1rem;">— momen &amp; kehidupan</p>
+    <h1 style="font-family:Georgia,serif;font-size:clamp(3rem,7vw,6rem);font-weight:700;color:#e8ddd0;line-height:1;margin-bottom:1rem;">Gallery</h1>
+    <p style="max-width:540px;color:#a89880;font-size:1.05rem;">Potongan kehidupan sehari-hari — kampus, kota, dan hal-hal kecil yang layak diingat.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section style="padding:4rem 2.5rem;">
+  <div style="max-width:1100px;margin:0 auto;">
+
+    <!-- FILTER BUTTONS -->
+    <div style="display:flex;gap:0.5rem;margin-bottom:2.5rem;flex-wrap:wrap;">
+      <span class="filter-btn" style="font-family:'Courier New',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;background:#c9894a;border:1px solid #c9894a;color:#1a1713;cursor:default;">Semua</span>
+      <span class="filter-btn" style="font-family:'Courier New',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;background:transparent;border:1px solid #3a342c;color:#8a7d6e;cursor:pointer;transition:all 0.3s;">Kampus</span>
+      <span class="filter-btn" style="font-family:'Courier New',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;background:transparent;border:1px solid #3a342c;color:#8a7d6e;cursor:pointer;transition:all 0.3s;">Kota Manado</span>
+      <span class="filter-btn" style="font-family:'Courier New',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;background:transparent;border:1px solid #3a342c;color:#8a7d6e;cursor:pointer;transition:all 0.3s;">Personal</span>
+    </div>
+
+    <!-- GRID -->
+    <div class="gallery-grid">
+
+      <!-- Item 1 -->
+      <div class="gallery-item" style="overflow:hidden;position:relative;background:#2e2a24;cursor:pointer;">
+        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+          <span class="gallery-emoji-big" style="font-size:3.5rem;display:block;">🏛️</span>
+        </div>
+        <div class="gallery-overlay" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,23,19,0.9) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem;opacity:0;transition:opacity 0.3s;">
+          <span style="font-family:Georgia,serif;font-size:0.88rem;color:#e8ddd0;font-style:italic;">Kampus UNSRAT, pagi hari</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;color:#c9894a;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.25rem;">Kampus</span>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item" style="overflow:hidden;position:relative;background:#2e2a24;cursor:pointer;">
+        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+          <span class="gallery-emoji-big" style="font-size:3.5rem;display:block;">😎</span>
+        </div>
+        <div class="gallery-overlay" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,23,19,0.9) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem;opacity:0;transition:opacity 0.3s;">
+          <span style="font-family:Georgia,serif;font-size:0.88rem;color:#e8ddd0;font-style:italic;">Waktu santai sore hari</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;color:#c9894a;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.25rem;">Personal</span>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item" style="overflow:hidden;position:relative;background:#2e2a24;cursor:pointer;">
+        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+          <span class="gallery-emoji-big" style="font-size:3.5rem;display:block;">🌊</span>
+        </div>
+        <div class="gallery-overlay" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,23,19,0.9) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem;opacity:0;transition:opacity 0.3s;">
+          <span style="font-family:Georgia,serif;font-size:0.88rem;color:#e8ddd0;font-style:italic;">Pantai di Manado</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;color:#c9894a;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.25rem;">Kota Manado</span>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="gallery-item" style="overflow:hidden;position:relative;background:#2e2a24;cursor:pointer;">
+        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+          <span class="gallery-emoji-big" style="font-size:3.5rem;display:block;">💻</span>
+        </div>
+        <div class="gallery-overlay" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,23,19,0.9) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem;opacity:0;transition:opacity 0.3s;">
+          <span style="font-family:Georgia,serif;font-size:0.88rem;color:#e8ddd0;font-style:italic;">Sesi praktikum pemrograman</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;color:#c9894a;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.25rem;">Kampus</span>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="gallery-item" style="overflow:hidden;position:relative;background:#2e2a24;cursor:pointer;">
+        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+          <span class="gallery-emoji-big" style="font-size:3.5rem;display:block;">☕</span>
+        </div>
+        <div class="gallery-overlay" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,23,19,0.9) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem;opacity:0;transition:opacity 0.3s;">
+          <span style="font-family:Georgia,serif;font-size:0.88rem;color:#e8ddd0;font-style:italic;">Ngopi sambil ngoding</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;color:#c9894a;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.25rem;">Personal</span>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="gallery-item" style="overflow:hidden;position:relative;background:#2e2a24;cursor:pointer;">
+        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+          <span class="gallery-emoji-big" style="font-size:3.5rem;display:block;">🌅</span>
+        </div>
+        <div class="gallery-overlay" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,23,19,0.9) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem;opacity:0;transition:opacity 0.3s;">
+          <span style="font-family:Georgia,serif;font-size:0.88rem;color:#e8ddd0;font-style:italic;">Sunset di tepi pantai</span>
+          <span style="font-family:'Courier New',monospace;font-size:0.65rem;color:#c9894a;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.25rem;">Kota Manado</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#1a1713;border-top:1px solid #3a342c;padding:2rem 2.5rem;">
+  <div class="footer-inner" style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+    <span style="font-family:Georgia,serif;font-size:1.1rem;color:#e8ddd0;">MRK<span style="color:#c9894a;">.</span></span>
+    <span style="font-family:'Courier New',monospace;font-size:0.68rem;color:#8a7d6e;letter-spacing:0.05em;">© 2025 Marchel Ravelino Kotta · UNSRAT Informatika</span>
+    <div style="display:flex;gap:1.5rem;">
+      <a href="contact.html" style="font-family:'Courier New',monospace;font-size:0.72rem;color:#8a7d6e;letter-spacing:0.08em;text-transform:uppercase;">Contact</a>
+      <a href="index.html"   style="font-family:'Courier New',monospace;font-size:0.72rem;color:#8a7d6e;letter-spacing:0.08em;text-transform:uppercase;">Home</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
